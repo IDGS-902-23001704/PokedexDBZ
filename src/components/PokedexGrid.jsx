@@ -9,12 +9,12 @@ function PokedexGrid({ personajes }) {
                     <LanguageCard 
                         key={personaje.id} 
                         nombre={personaje.nombre}
-                        anio={personaje.anio}
+                        /*anio={personaje.anio}*/
                         tipo={personaje.tipo}
                         descripcion={personaje.descripcion}
-                        emoji={personaje.emoji}
+                        /*emoji={personaje.emoji}
                         color={personaje.color}
-                        imagen={personaje.imagen} 
+                        imagen={personaje.imagen} */
                     />
                 ))}
             </div>
@@ -27,12 +27,12 @@ PokedexGrid.propTypes = {
         PropTypes.shape({
             id: PropTypes.number.isRequired,
             nombre: PropTypes.string.isRequired,
-            anio: PropTypes.number.isRequired,
+            /*anio: PropTypes.number.isRequired,*/
             tipo: PropTypes.string.isRequired,
             descripcion: PropTypes.string.isRequired,
-            emoji: PropTypes.string.isRequired,
+            /*emoji: PropTypes.string.isRequired,
             color: PropTypes.string.isRequired,
-            imagen: PropTypes.string.isRequired 
+            imagen: PropTypes.string.isRequired */
         })
     ).isRequired
 };
